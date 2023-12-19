@@ -1,0 +1,17 @@
+body {
+    font-family: "Times New Roman", Georgia, Serif;
+    background: rgb(238, 238, 238);
+}
+.w3-content{
+    background: rgb(255, 255, 255);
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+.logo_header{
+	margin:100px 260px;
+}
+.jpg{
+	margin-left:0px;
+}
