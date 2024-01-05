@@ -2,10 +2,11 @@
 <html>
 <meta name="viewport" content="width=1000">
 <style>
-    main{
-
+    main {
+        width: 800;
+        height: 800;
     }
-    
+
     body {
         font-family: Arial;
         margin: 0;
@@ -104,106 +105,196 @@
 </style>
 
 <body>
-    <div class="main">
-        <h2 style="text-align:center">Slideshow Gallery</h2>
 
-        <div class="container">
-            <div class="mySlides">
-                <div class="numbertext">1 / 6</div>
-                <img src="img/Nike_AirForce1.1.jpg" style="width:100%">
-            </div>
 
-            <div class="mySlides">
-                <div class="numbertext">2 / 6</div>
-                <img src="img/Nike_AirForce1.2.webp" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">3 / 6</div>
-                <img src="img/Nike_AirForce1.3.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">4 / 6</div>
-                <img src="img/Nike_AirForce1.4.webp" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">5 / 6</div>
-                <img src="img/Nike_AirForce1.5.webp" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">6 / 6</div>
-                <img src="img/Nike_AirForce1.6.webp" style="width:100%">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-
-            <div class="caption-container">
-                <p id="caption"></p>
-            </div>
-
-            <div class="row">
-                <div class="column">
-                    <img class="demo cursor" src="img/Nike_AirForce1.1.jpg" style="width:100%" onclick="currentSlide(1)"
-                        alt="The Woods">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="img/Nike_AirForce1.2.webp" style="width:100%"
-                        onclick="currentSlide(2)" alt="Cinque Terre">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="img/Nike_AirForce1.3.jpg" style="width:100%" onclick="currentSlide(3)"
-                        alt="Mountains and fjords">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="img/Nike_AirForce1.4.webp" style="width:100%"
-                        onclick="currentSlide(4)" alt="Northern Lights">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="img/Nike_AirForce1.5.webp" style="width:100%"
-                        onclick="currentSlide(5)" alt="Nature and sunrise">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="img/Nike_AirForce1.6.webp" style="width:100%"
-                        onclick="currentSlide(6)" alt="Snowy Mountains">
-                </div>
-            </div>
+    <div class="container">
+        <div class="AirForce1">
+            <img src="img/Nike_AirForce1.1.jpg" style="width:100%">
         </div>
 
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
+        <div class="AirForce1">
+            <img src="img/Nike_AirForce1.2.webp" style="width:100%">
+        </div>
 
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
+        <div class="AirForce1">
+            <img src="img/Nike_AirForce1.3.jpg" style="width:100%">
+        </div>
 
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
+        <div class="AirForce1">
+            <img src="img/Nike_AirForce1.4.webp" style="width:100%">
+        </div>
 
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("demo");
-                let captionText = document.getElementById("caption");
-                if (n > slides.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-                captionText.innerHTML = dots[slideIndex - 1].alt;
-            }
-        </script>
+        <div class="AirForce1">
+            <img src="img/Nike_AirForce1.5.webp" style="width:100%">
+        </div>
+
+        <div class="AirForce1">
+            <img src="img/Nike_AirForce1.6.webp" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides1(-1)">❮</a>
+        <a class="next" onclick="plusSlides1(1)">❯</a>
+
+        <div class="row">
+            <div class="column">
+                <img class="firstSlide cursor" src="img/Nike_AirForce1.1.jpg" style="width:100%"
+                    onclick="currentSlide1(1)" alt1="The Woods">
+            </div>
+            <div class="column">
+                <img class="firstSlide cursor" src="img/Nike_AirForce1.2.webp" style="width:100%"
+                    onclick="currentSlide1(2)" alt1="Cinque Terre">
+            </div>
+            <div class="column">
+                <img class="firstSlide cursor" src="img/Nike_AirForce1.3.jpg" style="width:100%"
+                    onclick="currentSlide1(3)" alt1="Mountains and fjords">
+            </div>
+            <div class="column">
+                <img class="firstSlide cursor" src="img/Nike_AirForce1.4.webp" style="width:100%"
+                    onclick="currentSlide1(4)" alt1="Northern Lights">
+            </div>
+            <div class="column">
+                <img class="firstSlide cursor" src="img/Nike_AirForce1.5.webp" style="width:100%"
+                    onclick="currentSlide1(5)" alt1="Nature and sunrise">
+            </div>
+            <div class="column">
+                <img class="firstSlide cursor" src="img/Nike_AirForce1.6.webp" style="width:100%"
+                    onclick="currentSlide1(6)" alt1="Snowy Mountains">
+            </div>
+        </div>
     </div>
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="Dunk">
+            <img src="img/Nike_Dunk.1.jpg" style="width:100%">
+        </div>
+
+        <div class="Dunk">
+            <img src="img/Nike_Dunk.2.webp" style="width:100%">
+        </div>
+
+        <div class="Dunk">
+            <img src="img/Nike_dunk.3.webp" style="width:100%">
+        </div>
+
+        <div class="Dunk">
+            <img src="img/Nike_dunk.4.jpg" style="width:100%">
+        </div>
+
+        <div class="Dunk">
+            <img src="img/Nike_dunk.4.webp" style="width:100%">
+        </div>
+
+        <div class="Dunk">
+            <img src="img/Nike_dunk.5.webp" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides2(-1)">❮</a>
+        <a class="next" onclick="plusSlides2(1)">❯</a>
+
+        <div class="row">
+            <div class="column">
+                <img class="secondSlide cursor" src="img/Nike_Dunk.1.jpg" style="width:100%" onclick="currentSlide2(1)"
+                    alt2="The Woods">
+            </div>
+            <div class="column">
+                <img class="secondSlide cursor" src="img/Nike_Dunk.2.webp" style="width:100%" onclick="currentSlide2(2)"
+                    alt2="Cinque Terre">
+            </div>
+            <div class="column">
+                <img class="secondSlide cursor" src="img/Nike_dunk.3.webp" style="width:100%" onclick="currentSlide2(3)"
+                    alt2="Mountains and fjords">
+            </div>
+            <div class="column">
+                <img class="secondSlide cursor" src="img/Nike_dunk.4.jpg" style="width:100%" onclick="currentSlide2(4)"
+                    alt2="Northern Lights">
+            </div>
+            <div class="column">
+                <img class="secondSlide cursor" src="img/Nike_dunk.5.webp" style="width:100%" onclick="currentSlide2(5)"
+                    alt2="Nature and sunrise">
+            </div>
+            <div class="column">
+                <img class="secondSlide cursor" src="img/Nike_dunk.5.webp" style="width:100%" onclick="currentSlide2(6)"
+                    alt2="Snowy Mountains">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+        //AirForce1-----------------------------------------------------------------------------------------
+        let slideIndex1 = 1;
+        showSlides1(slideIndex1);
+
+        function plusSlides1(na) {
+            showSlides1(slideIndex1 += na);
+        }
+
+        function currentSlide1(na) {
+            showSlides1(slideIndex1 = na);
+        }
+
+        function showSlides1(na) {
+            let ia;
+            let slides1 = document.getElementsByClassName("AirForce1");
+            let dots1 = document.getElementsByClassName("firstSlide");
+            if (na > slides1.length) { slideIndex1 = 1 }
+            if (na < 1) { slideIndex1 = slides1.length }
+            for (ia = 0; ia < slides1.length; ia++) {
+                slides1[ia].style.display = "none";
+            }
+            for (ia = 0; ia < dots1.length; ia++) {
+                dots1[ia].className = dots1[ia].className.replace(" active", "");
+            }
+            slides1[slideIndex1 - 1].style.display = "block";
+            dots1[slideIndex1 - 1].className += " active";
+            captionText.innerHTML = dots1[slideIndex1 - 1].alt1;
+        }
+        </script>
+
+        <script>
+        //Dunk--------------------------------------------------------------------
+        let slideIndex2 = 1;
+        showSlides2(slideIndex2);
+
+        function plusSlides2(nb) {
+            showSlides2(slideIndex2 += nb);
+        }
+
+        function currentSlide2(nb) {
+            showSlides2(slideIndex2 = nb);
+        }
+
+        function showSlides2(nb) {
+            let ib;
+            let slides2 = document.getElementsByClassName("Dunk");
+            let dots2 = document.getElementsByClassName("secondSlide");
+            if (nb > slides2.length) { slideIndex2 = 1 }
+            if (nb < 1) { slideIndex2 = slides2.length }
+            for (ib = 0; ib < slides2.length; ib++) {
+                slides2[ib].style.display = "none";
+            }
+            for (ib = 0; ib < dots2.length; ib++) {
+                dots2[ib].className = dots2[ib].className.replace(" active", "");
+            }
+            slides2[slideIndex2 - 1].style.display = "block";
+            dots2[slideIndex2 - 1].className += " active";
+            captionText.innerHTML = dots2[slideIndex2 - 1].alt2;
+        }
+
+    </script>
 </body>
 
 </html>
